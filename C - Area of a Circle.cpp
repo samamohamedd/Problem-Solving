@@ -1,14 +1,19 @@
 #include <iostream>
 #include <iomanip>
+#include <cmath>
+
 using namespace std;
 
-int main(){
+int main() {
+    double radius;
+    double area;
+    double pi = 3.14159;
 
-    const long double pi =3.14159;
-    long double r;
-    cin >> r;
-    long double area = pi* (r * r);
+    cin >> radius;
 
-    cout << fixed << setprecision(4)<<"A="<< area << endl;
+    area = pi * pow(radius, 2);
+
+    cout << "A=" << fixed << setprecision(4) << area << endl;
+
     return 0;
 }
